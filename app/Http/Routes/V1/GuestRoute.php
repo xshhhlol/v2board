@@ -8,7 +8,7 @@ class GuestRoute
     public function map(Registrar $router)
     {
         $router->group([
-            'prefix' => 'guest'
+            'prefix' => 'tourist'
         ], function ($router) {
             // Telegram
             $router->post('/telegram/webhook', 'V1\\Guest\\TelegramController@webhook');

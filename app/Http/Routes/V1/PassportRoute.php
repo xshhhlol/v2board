@@ -8,7 +8,7 @@ class PassportRoute
     public function map(Registrar $router)
     {
         $router->group([
-            'prefix' => 'passport'
+            'prefix' => 'verify'
         ], function ($router) {
             // Auth
             $router->post('/auth/register', 'V1\\Passport\\AuthController@register');

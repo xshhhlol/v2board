@@ -8,7 +8,7 @@ class UserRoute
     public function map(Registrar $router)
     {
         $router->group([
-            'prefix' => 'user',
+            'prefix' => 'person',
             'middleware' => 'user'
         ], function ($router) {
             // User
