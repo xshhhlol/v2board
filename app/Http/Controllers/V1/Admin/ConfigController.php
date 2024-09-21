@@ -62,7 +62,8 @@ class ConfigController extends Controller
         $telegramService->getMe();
         $telegramService->setWebhook($hookUrl);
         return response([
-            'data' => true
+            'data' => true,
+            'url' => $hookUrl
         ]);
     }
 
